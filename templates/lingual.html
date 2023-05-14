@@ -1,0 +1,49 @@
+<html>
+    <style>
+        .left{
+            width: 50%;
+			background-color: rgb(235, 234, 234);
+			color: rgb(161, 161, 161);
+			font-size: 100%;
+			font-weight: bold;
+			border-radius: 1rem;
+			text-align: center;
+			border: none;
+			padding: 2% 5%;
+			margin: 0 5% 5%;
+			display: block;
+			cursor: auto;
+			transition: all 0.3s ease-in-out;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			display: inline-block;
+			height: 100%;
+        }
+        
+        .right{
+            width: 50%;
+			background-color: rgb(235, 234, 234);
+			color: rgb(161, 161, 161);
+			font-size: 100%;
+			font-weight: bold;
+			border-radius: 1rem;
+			text-align: center;
+			border: none;
+			padding: 2% 5%;
+			margin: 0 5% 5%;
+			display: block;
+			cursor: auto;
+			transition: all 0.3s ease-in-out;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			display: inline-block;
+			height: auto;
+        }
+    </style><body>
+        
+	<form method="POST" action="/modify_input">
+		<input type="text" class = "left" value = "START TYPING" name="name"><br>
+
+		<input type="submit" value="Submit">
+        <p class = "right" id = "text" name = "text" value = "{{ modified_text }}"></p>
+	</form>
+    </body>
+</html>
